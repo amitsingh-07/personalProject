@@ -1,0 +1,13 @@
+ul li{
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.nav .active{
+  background: rgb(1, 148, 216);
+
+}
+
+.nav .active a{
+  color: aliceblue;
+}

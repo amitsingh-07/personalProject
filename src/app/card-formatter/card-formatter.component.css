@@ -1,0 +1,13 @@
+.card{
+  width: 500px;
+  margin: 10px;
+  box-shadow: 5px 5px 20px 1px;
+}
+
+.card, form{
+  padding: 10px;
+}
+
+.card, form, button{
+  margin-top: 5px;
+}

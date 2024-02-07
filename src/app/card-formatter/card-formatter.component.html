@@ -1,0 +1,13 @@
+<div class="card">
+  <form [formGroup]="formGrp11">
+    <div class="card-content">
+      <input type="text" class="form-control" [(ngModel)]="creditCardNumber" formControlName="credit" placeholder="Enter Credit Card Number" minlength="16" required>
+      <small *ngIf="creditError" class="text text-danger">{{creditError}}</small>
+      <br>
+      <button class="btn btn-primary" (click)="cardSubmit()">Submit</button>
+    </div>
+  </form>
+  <div class="alert alert-success" >
+    {{ creditCardNumber | CreditCardFormat}}
+  </div>
+</div>

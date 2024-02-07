@@ -1,0 +1,13 @@
+<div class="accordion">
+  <div *ngFor="let item of items" class="accordion-item">
+
+    <div class="accordion-header" (click)="toggleOptions(item)">
+      <!-- <ng-content selector="[accordion-header]"></ng-content> -->
+      {{item.title}}
+    </div>
+    <div class="accordion-body" [ngClass]="{'open': item.isOpen, 'closed': !item.isOpen}">
+      <!-- <ng-content select="[accordion-body]"></ng-content> -->
+      {{item.body}}
+    </div>
+  </div>
+</div>

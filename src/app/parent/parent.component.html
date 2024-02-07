@@ -1,0 +1,20 @@
+<div class="container">
+
+  <h3>Parent Form</h3>
+
+  <form >
+    <div class="form-floating mb-3 col-lg-4">
+      <input type="text" class="form-control" id="floatingInput" name="input" [(ngModel)]="formdetails.name"   required>
+      <label for="floatingInput">Name </label>
+    </div>
+    <button (click)="postapicall()" class="btn btn-primary">Submit</button>
+  </form>
+
+  <div class="alert alert-success">{{formdetails.name}}</div>
+
+  <div class="alert alert-info">
+    <p [innerHTML]="result"></p>
+    <!-- <p>{{result}}</p> -->
+  </div>
+
+</div>

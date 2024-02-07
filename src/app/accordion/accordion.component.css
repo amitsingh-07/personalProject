@@ -1,0 +1,28 @@
+.open{
+  display: block;
+}
+.closed{
+  display: none;
+}
+
+.accordion{
+  margin: 10px;
+  box-shadow: 5px 5px 20px 1px;
+  border-radius: 10px;
+}
+
+.accordion-item{
+  padding: 10px;
+}
+
+.accordion-header{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 7px;
+}
+
+.accordion-body , .open{
+  text-align: justify;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+}
